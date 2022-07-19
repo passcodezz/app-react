@@ -1,0 +1,105 @@
+/* ส่วน page Section_image */
+
+.section_image {
+  background: #ececec;
+  padding: 30px;
+  margin-bottom: 40px;
+    /* margin-top: 30px; */
+}
+
+.section_image_in {
+  width: 100px;
+  margin-top: 20px;
+  display: block;
+  margin: auto;
+  /* border-radius: 50%; */
+}
+
+#img_slide {
+  height: 400px;
+  width: 100%;
+}
+
+.box-text-inner {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  #img_slide {
+    height: 200px;
+  }
+
+  #img_slide {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+/* ส่วน Section_Image_Carousel --------------------------------------------------*/
+
+.image_carousel {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+}
+/* .image_carousel {
+  background-color: rgb(176, 148, 202);
+} */
+
+/* ส่วน Section_card ------------------------------------------------------------ */
+
+.card {
+  height: 450px;
+}
+
+
+.Section_card a {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (max-width: 575px) {
+  .card {
+    height: auto;
+  }
+}
+
+.CardGroup {
+  margin: 30px;
+}
+
+.Section_card {
+  margin: 50px;
+}
+
+.Section_card h5 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Section_card h4 {
+  padding: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  /* border-style: solid;
+  border-color: rgb(201, 201, 201);
+  box-shadow: -1px 11px 6px -11px rgb(0 0 0 / 75%); */
+}
+
+.Section_card .card {
+  box-shadow: -1px 11px 24px -11px rgb(0 0 0 / 75%);
+  transition: 0.5s;
+}
+
+.Section_card .card img {
+  width: 100%;
+  align-items: center;
+  box-shadow: -1px 10px 10px -11px rgb(0 0 0 / 75%);
+}
+
+.Section_card .card:hover {
+  transform: translateY(-20px);
+  box-shadow: -1px 20px 30px -11px rgb(0 0 0 / 75%);
+}
