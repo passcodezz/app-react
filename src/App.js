@@ -24,7 +24,14 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Headertop />
+      <Headers />
+      <HeaderButtom />
+      <Homepage />
+      <Footer />
+
+
+      {/* <BrowserRouter>
         <Headertop />
         <Headers />
 
@@ -83,7 +90,7 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }
