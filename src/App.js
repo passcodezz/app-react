@@ -21,66 +21,10 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Headers />
-
-        <Switch>
-          <Route path="/" exact>
-            <HeaderButtom />
-            <Homepage />
-          </Route>
-
-          <Route path="/aboutpage" exact>
-            <Aboutpage />
-          </Route>
-
-          <Route path="/reference" exact>
-            <Reference />
-          </Route>
-
-          <Route path="/contactpage" exact>
-            <Contactpage />
-          </Route>
-
-          <Route path="/products1" exact>
-            <Products1 />
-          </Route>
-
-          <Route path="/products2" exact>
-            <Products2 />
-          </Route>
-
-          <Route path="/products3" exact>
-            <Products3 />
-          </Route>
-
-          <Route path="/products4" exact>
-            <Products4 />
-          </Route>
-
-          <Route path="/products5" exact>
-            <Products5 />
-          </Route>
-
-          <Route path="/products6" exact>
-            <Products6 />
-          </Route>
-
-          <Route path="/products7" exact>
-            <Products7 />
-          </Route>
-
-          <Route path="/products8" exact>
-            <Products8 />
-          </Route>
-
-          <Route path="/sitemaps" exact>
-            <Sitemaps />
-          </Route>
-          
-        </Switch>
-        <Footer />
-      </BrowserRouter>
+      <Headers />
+      <HeaderButtom />
+      <Homepage />
+      <Footer />
     </div>
   );
 }
