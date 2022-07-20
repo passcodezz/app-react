@@ -71,6 +71,12 @@
   text-decoration: none;
   color: black;
 }
+.Section_card p{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 
 @media (max-width: 575px) {
   .card {
