@@ -1,6 +1,14 @@
+import React from "react";
 import "../css/header.css";
+import { Typewriter } from "react-simple-typewriter";
+import { useTypewriter, Cursor} from 'react-simple-typewriter'
+
 
 const HeaderButtom = () => {
+  const {text} = useTypewriter({
+    words: [' AUTOMATION CO.,LTD.'],
+    loop:[0],
+  })
   return (
     <div>
       <section id="hero" class="d-flex align-items-center">
@@ -9,10 +17,16 @@ const HeaderButtom = () => {
             {/* order-2 order-lg-1 */}
             <div
               class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              // data-aos="fade-up"
+              // data-aos-delay="200"
             >
-              <h1>บริษัท ภพ ออโตเมชั่น จำกัด</h1>
+              <h4>บริษัท ภพ ออโตเมชั่น จำกัด</h4>
+              <h2>
+                PHOP
+                <span>
+                <Typewriter words={[" AUTOMATION CO.,LTD."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                </span>
+              </h2>
               <p>
                 ดำเนินธุรกิจเกี่ยวกับ การผลิตเครื่องจักร Partเครื่องจักร
                 ชิ้นส่วน อะไหล่ รวมถึง Jig Test และงานประกอบเครื่องปรับอากาศ

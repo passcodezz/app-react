@@ -1,12 +1,32 @@
 * {
   font-family: "Prompt";
 }
+.header.active {
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ecf0f3;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
 
 .icon_phone {
   width: 20px;
   margin-top: 20px;
   border-radius: 50%;
 }
+
+#hero h2 {
+  /* font-size: 50px; */
+  font-weight: bold;
+  color: #7f5698;
+}
+#hero h2 span {
+  color: black;
+} 
+
 
 #collasible-nav-dropdown {
   color: rgb(0, 0, 0);
@@ -16,6 +36,9 @@
   background: #7f5698;
   color: #fff;
 }
+/* .Navbar{
+  position:fixed;
+} */
 
 #text-header {
   color: #fff;
@@ -130,7 +153,7 @@
 @media (max-width: 575px) {
   #hero {
     padding: 0px;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
   }
 
@@ -154,7 +177,7 @@
 @media (max-width: 380px) {
   #hero {
     padding: 0px;
-    height: 120vh;
+    height: 130vh;
     text-align: center;
     padding: 10px;
   }

@@ -6,9 +6,13 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 
 const Headers = () => {
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    header.classList.toggle("active", window.scrollY > 100);
+  });
   return (
-    <div className="Navbar">
-      <div className="Navbar-top">
+    <div className="header">
+      {/* <div className="Navbar-top">
         <Navbar className="Navbarcolor" collapseOnSelect expand="lg">
           <Container>
             <Navbar.Brand className="mt-2">
@@ -32,7 +36,7 @@ const Headers = () => {
             </Nav>
           </Container>
         </Navbar>
-      </div>
+      </div> */}
 
       <div className="Navbar-buttom">
         <Navbar collapseOnSelect expand="lg">
@@ -40,7 +44,7 @@ const Headers = () => {
             <Navbar.Brand href="/">
               <img
                 src="images/logo-new.png"
-                width="250"
+                width="auto"
                 height="50"
                 className="d-inline-block align-top"
                 alt="logo"
